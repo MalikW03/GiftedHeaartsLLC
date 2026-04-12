@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="quotes.css">
+    <link rel="stylesheet" href="navbar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+</head>
+<body>
+    <header>
+            <div id="navbar"></div>
+          
+            <script>
+              fetch('navbar.html')
+                .then(res => res.text())
+                .then(data => {
+                  document.getElementById('navbar').innerHTML = data;
+                });
+            </script>
+    </header>
+    <form action="https://formsubmit.co/giftedheartsllc@yahoo.com" method="POST" id="form-container">
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="abcd@gmail.com" required>
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="John Doe"required>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" placeholder="(###-###-####)" required>
+        
+        <fieldset>
+            <legend>Services Needed:</legend>
+          <ul>
+            <li>
+            <input type="checkbox" name="services" value="Home Renovation">Home Renovations
+            </li>
+            <li>
+            <input type="checkbox" name="services" value="Plumbing">Plumbing
+            </li>
+            <li>
+            <input type="checkbox" name="services" value="Hvac">Hvac
+            </li>
+            <li>
+            <input type="checkbox" name="services" value="Painting">Painting
+            </li>
+            <li>
+            <input type="checkbox" name="services" value="Pressure Washing">Pressure Washing
+            </li>
+            <li>
+            <input type="checkbox" name="services" value="Pool Cleaning">Pool Cleaning
+            </li>
+            <li>
+            <input type="checkbox" name="services" value="Other">Other
+            </li>
+          </ul>
+        </fieldset>
+        <textarea name="message" placeholder="Additional Information" id="textbox"></textarea>
+        <div>
+        <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <footer>
+        <p>&copy; 2025 Gifted Hearts LLC | <a href="#">Privacy Policy</a> | Follow us on <a href="https://www.instagram.com/gifted_heartsllc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Social Media</a></p>
+        <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </footer>
+    
+</body>
+</html>

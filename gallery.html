@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="gallery.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="gallery.js"></script>
+
+</head>
+<body>
+    <div id="navbar"></div>
+          
+            <script>
+              fetch('navbar.html')
+                .then(res => res.text())
+                .then(data => {
+                  document.getElementById('navbar').innerHTML = data;
+                });
+            </script>
+<h1>Gallery</h1>
+<div class="photo-gallery">
+  <div>
+    <a href="FullLogo.jpeg" data-lightbox="photo-gallery" data-title="Full Logo">
+      <img src="FullLogo.jpeg" alt="Logo">
+    </a>
+  </div>
+  <div>
+    <a href="Selfie.jpg" data-lightbox="photo-gallery" data-title="Selfie">
+      <img src="Selfie.jpg" alt="Selfie">
+    </a>
+  </div>
+  <div>
+    <a href="LosPainting.jpeg" data-lightbox="photo-gallery" data-title="Painting by Los">
+      <img src="LosPainting.jpeg" alt="Painting">
+    </a>
+  </div>
+  <div>
+    <a href="Tim painting.jpeg" data-lightbox="photo-gallery" data-title="Tim's Painting">
+      <img src="Tim painting.jpeg" alt="Painting#2">
+    </a>
+  </div>
+  <div>
+    <a href="pooljob.jpg" data-lightbox="photo-gallery" data-title="pool job">
+      <img src="pooljob.jpg" alt="pool job">
+    </a>
+  </div>
+  <div>
+    <a href="Pool job2.jpg" data-lightbox="photo-gallery" data-title="pool job2">
+      <img src="Pool job2.jpg" alt="pool job2">
+    </a>
+  </div>
+  <div>
+    <a href="Deckjob.jpeg" data-lightbox="photo-gallery" data-title="Deck job">
+      <img src="Deckjob.jpeg" alt="deck">
+    </a>
+  </div>
+</div>
+
+<h1>Videos</h1>
+<div class="photo-gallery">
+  <div>
+    <video controls width="100%">
+      <source src="GiftedHeartLLC video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div>
+    <video controls width="100%">
+      <source src="GiftedHeartsLLC video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div>
+    <video controls width="100%">
+      <source src="poolvideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div>
+    <video controls width="100%">
+      <source src="hvac.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+
+<footer>
+  <p>&copy; 2025 Gifted Hearts LLC | <a href="#">Privacy Policy</a> | Follow us on <a href="https://www.instagram.com/gifted_heartsllc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Social Media</a></p>
+  <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+  <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+</footer>
+</body>
+</html>

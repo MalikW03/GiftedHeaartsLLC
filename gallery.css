@@ -1,0 +1,30 @@
+.photo-gallery {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px 0;
+  }
+
+  .photo-gallery video {
+    max-height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    object-fit: cover;
+  }
+  
+  .slick-slide {
+    padding: 0 10px;
+  }
+  .photo-gallery img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .photo-gallery img:hover {
+    transform: scale(1.03);
+  }
+  

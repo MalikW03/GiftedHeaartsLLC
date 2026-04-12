@@ -1,0 +1,213 @@
+head{
+    background-color: black;
+}
+body{
+    background-repeat: none;
+    background-size: cover;
+    background-color: black;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.65);
+    z-index: -1;
+}
+.logo {
+    height: 60px; 
+    width: auto;
+    margin-left: 1px;
+}
+
+#hero {
+    height: 100vh;
+    background: url('Deckjob.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  #hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  }
+  
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+  }
+
+  .quote-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .quote-button:hover {
+    background-color: #000000;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  
+  .hero-overlay h2 {
+    animation: fadeIn 1.2s ease-out;
+  }
+  
+  .hero-overlay p {
+    animation: fadeIn 1.6s ease-out;
+  }
+  
+  .hero-overlay .quote-button {
+    animation: fadeIn 2s ease-out;
+  }
+
+  #about-preview {
+    background-color: #000000;
+    padding: 300px 20px;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-content h2 {
+    font-size: 2.5rem;
+    color: #fafafa;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 1.1rem;
+    color: #f7f7f7;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .about-button {
+    padding: 12px 25px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-button:hover {
+    background-color: #fbfafa;
+  }
+  footer p{
+    color: white;
+  }
+  #dark-preview {
+    text-align: center;
+    padding: 200px 20px;
+    background-color: #fffdfd;
+  }
+  #light-preview {
+    text-align: center;
+    padding: 200px 20px;
+    background-color: #010101;
+  }
+  
+  #dark-preview h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #000000;
+  }
+  #light-preview h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  #dark-preview p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #000000;
+  }
+  #light-preview p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #fcfbfb;
+  }
+  
+  #dark-preview .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  #light-preview .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff0000;
+    color: #f9f9f9;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  #dark-preview .btn:hover {
+    background-color: #020202;
+  }
+  #light-preview .btn:hover {
+    background-color: #ffffff;
+  }
+
+  
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+

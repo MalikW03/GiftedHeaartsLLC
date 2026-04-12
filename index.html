@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifted Hearts LLC</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <div id="navbar"></div>
+        <script>
+          fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => {
+              document.getElementById('navbar').innerHTML = data;
+            });
+        </script>
+
+    </header>
+<main>
+    <section id="hero">
+        <div class="hero-overlay">
+            <h2>Welcome to Gifted Hearts LLC</h2>
+            <p>Your trusted partner for Home and Maintenance services.</p>
+            <a href="quote.html" class="quote-button">Get a Quote</a>
+        </div>
+    </section>
+</main>
+    <section id="about-preview">
+        <div class="about-content">
+            <h2>Who We Are</h2>
+            <p>At Gifted Hearts LLC, we bring over a decade of trusted HVAC and remodeling experience to every home we touch. Our mission is simple: serve with skill, care, and dedication.</p>
+            <a href="about.html" class="about-button">Learn More About Us</a>
+    </div>
+  </section>
+  <section id="dark-preview">
+    <h2>Check Out Our Photos</h2>
+    <p>See our recent projects, quality work, and transformations in the photo gallery.</p>
+    <a href="gallery.html" class="btn">View Gallery</a>
+  </section>
+  
+  <section id="light-preview">
+    <h2>Our Services </h2>
+    <p>We provide a variety of services</p>
+    <a href="services.html" class="btn">View Services</a>
+  </section>
+  
+    <footer>
+        <p>&copy; 2025 Gifted Hearts LLC | <a href="#">Privacy Policy</a> | Follow us on <a href="https://www.instagram.com/gifted_heartsllc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Social Media</a></p>
+        <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </footer>
+
+</body>
+</html>

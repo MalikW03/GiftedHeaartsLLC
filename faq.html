@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="faq.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="faq.js"></script>
+
+</head>
+<body>
+    <div id="navbar"></div>
+          
+        <script>
+          fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => {
+              document.getElementById('navbar').innerHTML = data;
+            });
+        </script> 
+        <section id="faq-heading">
+          <h1>Frequently Asked Questions</h1>
+          <p>We understand that home repairs and renovations can be stressful, and you likely have questions along the way. Below are some of the most common questions we receive to help put your mind at ease.</p>
+        </section>
+
+    <div id="accordion">
+      <h3>What services do you offer?</h3>
+      <div>
+        <p>We provide HVAC installations, remodeling services, maintenance, pool maintenance and general home improvement work. Visit our Services page for a full list.</p>
+      </div>
+    
+      <h3>How do I request a quote?</h3>
+      <div>
+        <p>Click the "Get a Quote" button on the homepage or fill out the form on our Contact page.</p>
+      </div>
+    
+      <h3>Are you licensed and insured?</h3>
+      <div>
+        <p>Yes! We are fully licensed and insured with over 10 years of experience in the field.</p>
+      </div>
+    
+      <h3>What areas do you serve?</h3>
+      <div>
+        <p>We proudly serve Greensboro, NC and surrounding areas. Check our Areas of Service page for more details.</p>
+      </div>
+      <h3>How can I see pricing?</h3>
+        <div>
+          <p>Prices are based off the type of service and the size of the job. Visit our quotes page, fill out the form and we wil contact you.</p>
+        </div>
+      </h3>
+    </div>
+    <footer>
+      <p>&copy; 2025 Gifted Hearts LLC | <a href="#">Privacy Policy</a> | Follow us on <a href="https://www.instagram.com/gifted_heartsllc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Social Media</a></p>
+        <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+  </footer>
+</body>
+</html>

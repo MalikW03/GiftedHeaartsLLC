@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areas of Services</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="services.css">
+    <script src="services.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <header class="services-header">
+      <h1>Our Services</h1>
+      <p>Explore the range of services we offer to help your business grow.</p>
+    </header>
+  
+    <section class="services-section">
+      <div class="service-card">
+        <h3>Plumbing</h3>
+        <p>Reliable plumbing services for your home or business. Whether it's a leaky faucet, pipe repair, or full system installation, our licensed plumbers ensure everything flows smoothly.</p>
+      </div>
+      <div class="service-card">
+        <h3>Home renovations</h3>
+        <p>Transform your space with our expert renovation services. From kitchen remodels to full-home upgrades, we bring your vision to life with quality craftsmanship and attention to detail.</p>
+      </div>
+      <div class="service-card">
+        <h3>HVAC</h3>
+        <p>Keep your home comfortable year-round. Our HVAC services include installation, maintenance, and repair of heating, ventilation, and air conditioning systems for optimal indoor climate.</p>
+      </div>
+      <div class="service-card">
+        <h3>Painting</h3>
+        <p>Freshen up your space with professional painting services. We handle interior and exterior projects, delivering clean lines, lasting finishes, and vibrant color options.</p>
+      </div>
+      <div class="service-card">
+        <h3>Pressure Washing</h3>
+        <p>Restore the look of your property with our high-powered pressure washing. We clean driveways, decks, siding, and more — removing dirt, mildew, and grime efficiently.</p>
+      </div>
+      <div class="service-card">
+        <h3>Pool Cleaning</h3>
+        <p>Enjoy a sparkling clean pool all season long. Our regular and one-time cleaning services include skimming, vacuuming, chemical balancing, and equipment checks.</p>
+      </div>
+      <div class="service-card">
+        <h3>Other services</h3>
+        <p>Need something not listed? We offer a range of custom handyman and maintenance solutions. Just reach out, and we’ll tailor our help to meet your needs.</p>
+      </div>
+    </section>
+
+    <div id="navbar"></div>
+          
+            <script>
+              fetch('navbar.html')
+                .then(res => res.text())
+                .then(data => {
+                  document.getElementById('navbar').innerHTML = data;
+                });
+            </script>
+  
+  <footer>
+    <p>&copy; 2025 Gifted Hearts LLC | <a href="#">Privacy Policy</a> | Follow us on <a href="https://www.instagram.com/gifted_heartsllc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Social Media</a></p>
+    <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+</footer>
+</body>
+</html>

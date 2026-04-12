@@ -1,0 +1,43 @@
+#form-container {
+    width: 600px; 
+    margin: 50px auto; 
+    padding: 20px;
+    background: #fff; 
+    border-radius: 10px; 
+    border: 10px solid #070000;
+}
+fieldset{
+    border: none;
+    margin: 1px;
+    padding: 1px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+}
+legend{
+    font-weight: bold;
+}
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2); 
+}
+
+.logo {
+    height: 50px; 
+    width: auto;
+}
+#form-container {
+    transform: scale(1.05); 
+    transform-origin: top left; 
+  }
+
+  #textbox{
+    width: 70%;
+    height: 70px; 
+    padding: 10px; 
+    font-size:small; 
+    border: 1px solid #000000; 
+    border-radius: 5px; 
+     
+  }
+

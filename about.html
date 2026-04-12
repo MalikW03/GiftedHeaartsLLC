@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="about.js"></script>
+</head>
+<body>
+    <header>
+        <div id="navbar"></div>
+          
+        <script>
+          fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => {
+              document.getElementById('navbar').innerHTML = data;
+            });
+        </script>
+    </header>
+    <div id="all-sections">
+    <section class="about" id="section-light" data-aos="fade-up">
+        <h1 id="title">About Gifted Hearts LLC</h1>
+    </section>
+    <section class="about-section" id="section-dark" data-aos="fade-right">
+        <div class="team-member">
+            <img src="LosPainting.jpeg" alt="Founder photo">
+                <div class="bio">
+                    <h1>Our Mission</h1>
+                <p>At Gifted Hearts LLC, our mission is to serve with compassion, skill, and integrity. We provide professional, personalized care with the warmth of family and the heart of service.</p>
+                </div>
+        </div>
+    </section>
+    <section class="team-section" id="section-light" data-aos="fade-left">
+        <div class="team-member reverse">
+          <img src="Selfie.jpg" alt="Founder photo">
+          <div class="bio">
+            <h1>Meet Our Founder</h1>
+            <h2>Carlos Worrell</h2>
+            <p id="text1">Carlos is the founder and heart behind Gifted Hearts LLC. Known for his dependable work ethic and caring spirit, Los brings over 10 years of hands-on experience in the field. Certified in HVAC and raised in a large, loving family, Carlos understands the value of support, dedication, and genuine care.</p>
+            <p>Whether he's working with clients or leading his team, Los puts his heart into everything he does. His belief in family and community is what fuels the mission of Gifted Hearts every single day.</p>
+          </div>
+        </div>
+    </section>
+    <section class="vision-section" id="section-dark" data-aos="fade-right">
+        <div class="team-member">
+            <img src="Pool job2.jpg" alt="Pool photo">
+            <div class="bio">
+        <h1>Our Vision</h1>
+        <p>At Gifted Hearts LLC, we envision a future where every household and individual in our community experiences the highest level of compassionate, reliable, and expert care. Our goal is to become a trusted name across North Carolina, known not only for our professional excellence but also for the genuine relationships we build with those we serve. We believe that true service is rooted in love, integrity, and the willingness to go above and beyond—just like family. By blending certified expertise with heartfelt dedication, we aim to uplift, empower, and inspire our communities, one home at a time</p>
+        </div>
+        </div>
+    </section>
+
+    <section class="core-values" id="section-light" data-aos="zoom-in">
+        <div class="team-member reverse">
+            <img src="PressureWash.png" alt="pressure wash">
+            <div class="bio">
+        <h2>Our Core Values</h2>
+        <ul class="values-list">
+         <h3><li>❤️ Compassion</li></h3>
+          <p>We lead with empathy and kindness. Every service we provide is rooted in understanding and the genuine desire to care for others as if they were our own family.</p>
+          
+          <h3><li>🤝 Integrity</li></h3>
+          <p>Trust is earned through honesty, transparency, and doing what’s right — even when no one is watching. We hold ourselves to the highest ethical standards in every job, big or small.</p>
+          
+          <h3><li>🌱 Growth</li></h3>
+          <p>We believe in continuous improvement, both personally and professionally. Whether it's learning new skills or finding better ways to serve our clients, we never stop growing.</p>
+
+          <h3><li>🎯 Dedication</li></h3>
+          <p>Our commitment runs deep. We show up every day ready to give 110%, delivering consistent, quality work fueled by purpose and pride.</p>
+        </ul>
+        </div>
+        </div>
+    </section>
+
+    <section class="Socail-Section" id="section-dark" data-aos="fade-right">
+        <div class="team-member">
+            <img src="connectWithUs.png" alt="instagram Logo">
+            <div class="bio">
+                <h2>Connect With Us</h2>
+            <p><a href="https://www.instagram.com/gifted_heartsllc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-cta" id="section-light" data-aos="fade-up">
+        <h2>Want to Learn More?</h2>
+        <p id="link">Visit our <a href="services.html">Services</a> page or <a href="quote.html">Get a Quote</a> now!</p>
+    </section>
+
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Gifted Hearts LLC | <a href="#">Privacy Policy</a> | Follow us on <a href="https://www.instagram.com/gifted_heartsllc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Social Media</a></p>
+    </footer>
+
+    <script src="about.js"></script>
+    <footer>
+        <p>&copy; 2025 Gifted Hearts LLC | <a href="#">Privacy Policy</a> | Follow us on <a href="https://www.instagram.com/gifted_heartsllc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Social Media</a></p>
+        <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </footer>
+</body>
+</html>
